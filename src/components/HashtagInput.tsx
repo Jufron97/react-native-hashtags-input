@@ -126,7 +126,6 @@ export default HashtagInput;
 const styles = StyleSheet.create({
   wraper: {
     flexDirection: 'row',
-    //flex: 1,
     flexWrap: 'wrap',
     backgroundColor: '#343434',
     justifyContent: 'flex-start',
