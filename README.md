@@ -11,11 +11,17 @@ npm install react-native-hashtags-input
 ## Usage
 
 ```js
-import { multiply } from 'react-native-hashtags-input';
+import HashtagInput from 'react-native-hashtags-input';
 
-// ...
+export default function App() {
+  const [tags, setTags] = React.useState<string[]>([]);
 
-const result = await multiply(3, 7);
+  return (
+    <View style={styles.container}>
+      <HashtagInput tagsArray={tags} setTagsArray={setTags} />
+    </View>
+  );
+}
 ```
 
 ## Contributing
